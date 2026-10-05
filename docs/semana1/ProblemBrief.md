@@ -1,85 +1,56 @@
-# Problem Brief
-
-## Decisión del problema
-
-### Problema elegido
-
-> El problema ganador en una frase, sin mencionar blockchain, y quién lo propuso.
-
-Escriban aquí su respuesta.
-
-### Por qué elegimos este
-
-> Qué inclinó al equipo por este problema frente a los demás, según los criterios de la Sesión 1.
-
-Escriban aquí su respuesta.
-
-### Propuestas descartadas
-
-> Cada propuesta considerada, quién la propuso y el motivo del descarte.
-
-Escriban aquí su respuesta.
-
-### Cómo tomamos la decisión
-
-> Cómo llegó el equipo al acuerdo: votación, consenso tras debate u otro.
-
-Escriban aquí su respuesta.
-
----
-
 ## Problem Brief
 
 ### Encabezado
 
-> Nombre del proyecto y una frase que describa el problema. Extensión: breve.
-
-Escriban aquí su respuesta.
+VITAE es un software que permitirá la interoperabilidad entre diferentes entes prestadores de salud en Colombia.
 
 ### Equipo y roles
 
-> Integrantes con su usuario de GitHub, rol asumido por cada persona, responsable de las entregas y canal de coordinación interna. Extensión: breve.
-
-Escriban aquí su respuesta.
+Thomas Aguirre - Director de proyecto.
 
 ### Problema y evidencia
 
-> Enunciado del problema en una frase, sin mencionar blockchain. Contexto, frecuencia y alcance. Evidencia mínima de que el problema existe: observación directa, experiencia propia, conversaciones o fuentes consultadas, con enlace o cita cuando aplique. Extensión: 150–300 palabras.
-
-Escriban aquí su respuesta.
+Basado en la ley 2015 del año 2020 el gobierno Colombiano instauró y definió el alcance de la historia clínica interoperable en Colombia, a efectos prácticos, lo que permite esta ley es garantizar que entre los diferentes entes prestadores de salud se compartan las historias clínicas de los usuarios y de esta forma mejorar la prestación del servicio de salud a nivel nacional, todo esto mediado una herramienta tecnológica avalada por el ministerio de las TIC del gobierno colombiano.
 
 ### Usuario y actores
 
-> Quién sufre el problema y qué necesita resolver. Cómo lo resuelve hoy y qué le cuesta en dinero, tiempo o esfuerzo. Demás actores que intervienen en el flujo, con el papel que cumple cada uno. Extensión: 150–300 palabras.
+A pesar de que existe la necesidad clara de que las entidades prestadoras de salud compartan la información, el ministerio de las TIC no ha compartido información suficiente acerca de la herramienta tecnológica que mediará esta iniciativa, así que, los ciudadanos colombianos no entienden claramente cuál es el flujo de su información entre las EPS y el ministerio de salud y para una organización que genere historias clínicas no es de fácil acceso los lineamientos que debe cumplir para comenzar a interoperar las historias clínicas.
+
+A día de hoy el ministerio de las TIC ha promovido una API para la comunicación y el almacenamiento de las mismas, actualmente, pocas entidades de salud interoperan sus historias clínicas (la gran mayoría de entidades que está totalmente interconectadas se sitúan en la capital del país) haciendo que las zonas alejadas de las grandes urbes no gocen de este beneficio. A pesar de que el lineamiento del gobierno es que esto funcione lo más rápido posible, en la práctica no ha sucedido así.
 
 Escriban aquí su respuesta.
 
 ### Flujo actual de valor
 
-> Recorrido paso a paso de cómo se mueve hoy el dinero, la información o el activo, desde el origen hasta el destino. Diagrama o secuencia numerada, con los intermediarios explícitos. Señalar si algún paso responde a una obligación normativa. Extensión: 150–300 palabras.
+Actualmente el flujo de información de las historias clínicas entre las diferentes entidades sucede así:
 
-Escriban aquí su respuesta.
+1. IPS (puesto de salud donde va el usuario a consulta)
+   1.1 Servicio interno de IPS donde se almacena la información
+2. EPS (Entidad que regula el trámite de prestar el servicio de salud)
+   2.1 Servicio interno de EPS donde se almacena la información
+3. Conversión del formato interno al formato interoperable exigido por el MinSalud y el MinTIC
+3. Solicitud de envío de historia clínica
+4. Recepción de historia clínica en los servidores del MinTIC
+5. Consulta disponible para los demás IPS/EPS del país
+
+Actualmente el flujo está mediado por circulares del MinTIC. 
 
 ### Fricciones identificadas
 
-> Puntos concretos donde el flujo falla, se encarece o se demora. Cada fricción indica en qué paso ocurre, qué la causa y a quién afecta. Extensión: 150–300 palabras.
-
-Escriban aquí su respuesta.
+Actualmente el proceso depende totalmente del MinTIC y el MinSalud, esto hace que para agregar un nuevo ente emisor de historias clínicas tenga que pasar por un proceso burocrático y adecuación tecnológica a la arquitectura ofrecida por el MinTIC, el servicio actual puede afectar la operación en zonas alejadas de las cabeceras municipales donde aún no hay interoperabilidad de las historias clínicas.
 
 ### Oportunidad e hipótesis
 
-> Oportunidad priorizada entre las fricciones identificadas, con el motivo de la elección. Hipótesis inicial de por qué blockchain podría mejorar ese punto, expresada en términos de qué cambiaría para el usuario. Extensión: 150–300 palabras.
-
-Escriban aquí su respuesta.
+BlockChain podría ayudar de forma implícita en la inmutabilidad de los registros, fácil inserción de nuevos nodos emisores de historias clínicas y como ciudadanos colombianos podríamos confiar plenamente, gracias a la tecnología, que no hay redes de corrupción que puedan mutar la información de la red, haciendo que esta de forma inherente sea segura y confiable.
 
 ### Criterio de pertinencia
 
-> Justificación de por qué el caso requiere un registro distribuido y no una base de datos tradicional o una integración entre sistemas existentes. Debe apoyarse en al menos uno de los criterios de la Sesión 1: varias partes que no confían entre sí necesitan compartir un mismo registro, el histórico no puede alterarse, o se elimina un intermediario que hoy concentra la confianza. Extensión: 150–300 palabras.
+1. El histórico no puede alterarse: Actualmente debemos confiar en la buena fe de los funcionarios del MinTIC/MinSalud en que la red de historias clínicas interoperables efectivamente es una red inmutable y de solo inserción, con BlockChain se evitaría esa fe ciega y los ciudadanos pueden confiar plenamente en que sus registros clínicos no serán mutados o eliminados de la red.
 
-Escriban aquí su respuesta.
+2. Intermediario: Actualmente la interoperabilidad de las historias clínicas pasa por las EPS, haciendo que se agregue un eslabón a la cadena que es incesario, trasladando esta interoperabilidad de forma directa a las IPS haríamos que la red sea más eficiente y rápida pues se evitan temas administrativos y tecnológicos entre la EPS y la IPS. 
 
 ### Supuestos y riesgos
 
-> Dos o tres supuestos que tendrían que ser ciertos para que la hipótesis funcione, y qué podría invalidarla. Extensión: 150–300 palabras.
+1. Las historias clínicas deben ser inmutables
+2. Las historias clínicas deben prevalecer en el tiempo
 
-Escriban aquí su respuesta.
